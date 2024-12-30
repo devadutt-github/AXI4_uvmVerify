@@ -19,8 +19,8 @@
 `include "axi4_lite_slave.sv"
 
 module axi4_lite_top#(
-parameter DATA_WIDTH = 8,
-parameter ADDRESS = 2
+parameter DATA_WIDTH = 32,
+parameter ADDRESS = 32
 )(
 input                           ACLK,
 input                           ARESETN,
