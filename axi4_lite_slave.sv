@@ -1,7 +1,7 @@
 
 module axi4_lite_slave #(
-parameter ADDRESS = 2,
-parameter DATA_WIDTH = 8
+parameter ADDRESS = 32,
+parameter DATA_WIDTH = 32
 )
 (
 //Global Signals

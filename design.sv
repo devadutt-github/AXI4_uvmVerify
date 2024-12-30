@@ -1,12 +1,9 @@
-//------------------------------------------------------------------------
-//				Memory Model RTL - www.verificationguide.com
-//------------------------------------------------------------------------
 /*
               -----------------
               |               |
- address ---->|               |
+ address ---->|  AXI4 interf  |
               |               |------> R_data
-              | Memory Model  |
+              |  Memory Model |
   W_data ---->|               |
               |               | 
               -----------------
@@ -17,25 +14,6 @@
 -------------------------------------------------------------------------- */
 `include "uvm_macros.svh"
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 04/19/2024 04:35:40 PM
-// Design Name: 
-// Module Name: axi4_lite_top
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
 
 `include "axi4_lite_master.sv"
 `include "axi4_lite_slave.sv"
